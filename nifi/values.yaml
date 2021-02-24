@@ -1,6 +1,6 @@
 ---
 # Number of nifi nodes
-replicaCount: 3
+replicaCount: 1
 
 ## Set default image, imageTag, and imagePullPolicy.
 ## ref: https://hub.docker.com/r/apache/nifi/
@@ -161,7 +161,7 @@ ingress:
   # If you want to change the default path, see this issue https://github.com/cetic/helm-nifi/issues/22
 
 # Amount of memory to give the NiFi java heap
-jvmMemory: 2g
+jvmMemory: 16g
 
 # Separate image for tailing each log separately and checking zookeeper connectivity
 sidecar:

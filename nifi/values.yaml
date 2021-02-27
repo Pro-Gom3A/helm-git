@@ -62,7 +62,7 @@ properties:
   clusterSecure: false # set to true if ldap is enabled
   needClientAuth: false
   provenanceStorage: "8 GB"
-  nodeAddress:
+  nodeAddress: $(hostname -f)
   siteToSite:
     port: 10000
   authorizer: managed-authorizer
@@ -120,10 +120,10 @@ headless:
 
 # ui service
 service:
-  type: NodePort
-  port: 8080
-  export: 9092
-  nodeport: 30236
+  type: LoadBalancer
+  httpPort: 8080
+  httpsPort: 9443
+  nodePort: 8100
   annotations: {}
     # loadBalancerIP:
     ## Load Balancer sources
@@ -142,13 +142,9 @@ service:
     enabled: false
     ports:
       - name: processor01
-        port: 7001
-        targetPort: 7001
-        #nodePort: 30701
-      - name: processor02
-        port: 7002
-        targetPort: 7002
-        #nodePort: 30702
+        port: 8080
+        targetPort: 8080
+        nodePort: 8101
 
 ## Configure Ingress based on the documentation here: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ##
@@ -317,5 +313,4 @@ registry:
   port: 80
   ## Add values for the nifi-registry here
   ## ref: https://github.com/dysnix/charts/blob/master/nifi-registry/values.yaml
-
 

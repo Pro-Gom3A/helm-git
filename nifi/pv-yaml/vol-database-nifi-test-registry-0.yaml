@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol-database-nifi-test-registry-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 8Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: database-nifi-test-registry-0
+    namespace: nifi-test
+  hostPath:
+    path: /var/lib/docker/pv/vol-database-nifi-test-registry-0
+    type: ""
+  persistentVolumeReclaimPolicy: Recycle
+  volumeMode: Filesystem
+  
+status:
+  phase: Bound

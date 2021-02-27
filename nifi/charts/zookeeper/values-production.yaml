@@ -41,7 +41,7 @@ image:
 
 ## Kubernetes Cluster Domain
 ##
-clusterDomain: cluster.local
+clusterDomain: qeema.stc.local
 
 ## Add labels to all the deployed resources
 ##

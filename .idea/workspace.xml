@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ba17929-6905-407f-858b-00ba09d27dfb" name="Default Changelist" comment="adding source" />
+    <list default="true" id="4ba17929-6905-407f-858b-00ba09d27dfb" name="Default Changelist" comment="adding source">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/druid/templates/historical/statefulset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/druid/templates/historical/statefulset.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +29,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1ou1LxOA3VWqawgoYwBvCCu9DwG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614190258921</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added druid">
+      <created>1614423029068</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614423029068</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added druid">
+      <created>1614423109562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614423109562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,9 +113,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding source" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding source" />
+    <MESSAGE value="added druid" />
+    <option name="LAST_COMMIT_MESSAGE" value="added druid" />
   </component>
 </project>

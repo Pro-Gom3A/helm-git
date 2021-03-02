@@ -103,11 +103,16 @@ spec:
         volumeMounts:
         - mountPath: /opt/druid/var/druid/
           name: data
+        - mountPath: /opt/druid/var/druid-deep-storage
+            name: deep-storage
   {{- if .Values.gCloudStorage.enabled }}
         - name: google-cloud-key
           mountPath: /var/secrets/google
   {{- end }}
       volumes:
+      - name: deep-storage
+          persistentVolumeClaim:
+            claimName: deep-storage-claim
   {{- if not .Values.historical.persistence.enabled }} 
       - name: data
         emptyDir: {}
